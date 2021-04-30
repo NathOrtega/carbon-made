@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carbon Made</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./Resources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <div class="logo__unicornContainer">
+        <img src="./Resources/uniface-knockout.svg" alt="Unicorn" class="logo__unicorn">
+      </div>
+      <img src="./Resources/heart-bubble.svg" alt="heart" class="logo__heart">
+    </div>
+    <h1 class="header__title">carbonmade</h1>
+    <p class="header__text">Show off your work</p>
+  </header>
+  <section class="mainContainer">
+    <img src="./Resources/bubbles-2.png" class="bubblesLeft">
+    <img src="./Resources/bubbles-2.png" class="bubblesRight">
+    <img src="./Resources/jellyfish.png" class="jellyfish">
+    <div class="formHeader">
+      <p class="formHeader__title">Sign up for Meh.</p>
+      <p class="formHeader__text">Everything you need to build a pretty online portfolio</p>
+      <div class="formRibbon">
+        <p class="formRibbon__percentage">100%</p>
+        <p class="formRibbon__free">FREE</p>
+        <p class="formRibbon__forReal">for real</p>
+        <div class="formRibbon__triangle"></div>
+      </div>
+    </div>
+    <div class="formBody">
+      <img src="./Resources/dragon-head.png" class="dragonHead">
+      <img src="./Resources/dragon-tail.png" class="dragonTail">
+      <form>
+        <div class="formBody__formEnumeration">
+          1
+        </div>
+        <p class="formBody__formStep">First, name your portfolio</p>
+        <div class="formBody__formBlock">
+          <label for="portfolioTilte" class="formBlock__label">Portfolio title</label>
+          <input type="text" name="portfolioTitle" id="portfolioTitle" class="formBlock__input">
+          <label for="portfolioAddress" class="formBlock__label">Portfolio address</label>
+          <input type="text" name="portfolioAddress" id="portfolioAddress" class="formBlock__input formBlock__input--shorter">
+          <input type="text" placeholder="carbonmade.com" disabled class="formBlock__input formBlock__input--disabled"> 
+        </div>
+        <div class="formBody__formEnumeration formBody__formEnumeration--2">
+          2
+        </div>
+        <p class="formBody__formStep">Now, enter your account details</p>
+        <div class="formBody__formBlock">
+          <label for="name" class="formBlock__label">Name</label>
+          <input type="text" name="name" id="name" class="formBlock__input">
+          <label for="email" class="formBlock__label">Email</label>
+          <input type="email" name="email" id="email" class="formBlock__input">
+          <p class="formBlock__note">NOTE: We'll never share your email, promise.</p>
+          <label for="password" class="formBlock__label">Password</label>
+          <input type="password" name="password" id="password" class="formBlock__input">
+          <input type="checkbox" name="showPassword" id="showPassword" class="formBlock__checkbox">
+          <label for="showPassword" class="formBlock__label--inline">Show Password</label>
+        </div>
+        <input type="checkbox" name="termsOfUse" id="termsOfUse" class="formBody__checkbox">
+        <label for="termsOfUse" class="formBody_label">
+          I agree to the <a href="#" class="formBody__link">Terms of use, Privacy and Policy</a> and <a href="#" class="formBody__link">Refund Policy</a>
+        </label>
+        <button type="submit" class="formBody__button">Create your portfolio</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

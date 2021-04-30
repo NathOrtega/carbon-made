@@ -1,0 +1,325 @@
+:root {
+  --pageFont: 'Roboto Slab', serif;
+  --pageMainColor: #89daf3;
+  --headerColor: #225f77;
+  --headerFontColor: #23637a;
+  --labelAndButtonColor: #90b936;
+  --IconHeadColor: #560f11;
+  --formBlockColor: #f3f6f5;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--pageFont);
+}
+
+body {
+  margin: 0;
+  background-color: var(--pageMainColor);
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: fit-content;
+  position: relative;
+}
+
+.header__logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  left: 25px; 
+}
+
+.logo__unicornContainer {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--IconHeadColor);
+  margin-right: 10px;
+}
+
+.logo__unicorn {
+  width: 100px;
+  height: 100px;
+}
+
+.logo__heart {
+  width: 40px;
+  height: 40px;
+}
+
+.header__title {
+  color: var(--headerFontColor);
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.header__text {
+  color: var(--headerFontColor);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.formHeader {
+  width: 50%;
+  max-width: 800px;
+  height: 130px;
+  background-color: var(--headerColor);
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px 40px;
+  position: relative;
+}
+
+.formHeader__title {
+  margin: 0;
+  color: white;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.formHeader__text {
+  color: white;
+  font-size: 11px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.formRibbon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 150px;
+  background-color: var(--labelAndButtonColor);
+  position: absolute;
+  right: 5%;
+  top: 0;
+  padding: 30px 20px;
+  z-index: 100;
+}
+
+.formRibbon__triangle {
+  width: 0;
+  height: 0;
+  border-left: 65px solid transparent;
+  border-right: 65px solid transparent;
+  border-top: 20px solid var(--labelAndButtonColor);
+  position: absolute;
+  bottom: -20px;
+  z-index: 100;
+}
+
+.formRibbon__percentage, .formRibbon__forReal {
+  color: #6f931a;
+  margin: 0;
+  font-size: large;
+  font-style: italic;
+}
+
+.formRibbon__free {
+  color: #c7dca0;
+  font-size: xx-large;
+  margin: 5px;
+}
+
+.formRibbon__percentage::before, .formRibbon__percentage::after {
+  content:"\2014";
+  color: #c7dca0;
+}
+
+.formRibbon__forReal::before, .formRibbon__forReal::after {
+  content:"\2013";
+  color: #c7dca0;
+}
+
+.formBody {
+  width: 50%;
+  max-width: 800px;
+  height: 850px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 30px;
+}
+
+.formBody__formStep {
+  color: #3c474f;
+  font-size: x-large;
+  font-weight: 400;
+  margin: 20px;
+}
+
+.formBody__formBlock {
+  background-color: #f3f6f5;
+  width: 100%;
+  height: fit-content;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.formBlock__label {
+  display: block;
+  font-size: small;
+  margin: 10px 0;
+  color: #8d8d8d;
+}
+
+.formBlock__input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  padding-left: 10px;
+  color: #8d8d8d;
+}
+
+.formBlock__input--shorter {
+  width: 70%;
+  margin: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.formBlock__input--disabled {
+  width: 30%;
+  margin: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: -5px;
+}
+
+.formBlock__note {
+  font-size: small;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+
+.formBlock__checkbox {
+  display: inline;
+  cursor: pointer;
+}
+
+.formBlock__label--inline {
+  display: inline;
+  font-size: small;
+  margin: 10px 0;
+  color: #8d8d8d;
+  cursor: pointer;
+}
+
+.formBody__checkbox {
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.formBody_label {
+  font-size: small;
+  color: #8d8d8d;
+  cursor: pointer;
+}
+
+.formBody__link {
+  text-decoration: none;
+  color: #b2cdde;
+}
+
+.formBody__button {
+  display: block;
+  width: 180px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--labelAndButtonColor);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formBody__formEnumeration {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #51aecf;
+  color: white;
+  border: 3px solid white;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  position: absolute;
+  left: -10px;
+  top: 45px;
+}
+
+.formBody__formEnumeration--2 {
+  top: 325px;
+}
+
+.mainContainer {
+  position: relative;
+}
+
+.bubblesLeft {
+  position: absolute;
+  left: -50px;
+  top: 40%;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.bubblesRight {
+  position: absolute;
+  right: 200px;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  z-index: -50;
+}
+
+.jellyfish {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.dragonHead {
+  position: absolute;
+  left: -343px;
+  bottom: 0;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.dragonTail {
+  position: absolute;
+  right: -284px;
+  bottom: 0;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
